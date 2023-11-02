@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<div class="tabs">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h2>Home</h2>
+  <p>This is the home tab.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h2>About</h2>
+  <p>This is the about tab.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2>Contact</h2>
+  <p>This is the contact tab.</p>
+</div>
+
+<style>
+.tabs {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tablinks.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+<script>
+function openTab(evt, tabName) {
+  // Get all elements with class="tabcontent" and hide them
+  var tabcontent = document.getElementsByClassName("tabcontent");
+  for (var i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  var tablinks = document.getElementsByClassName("tablinks");
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<head>
+  <title>Welcome to the hell</title>
+</head>
+<body>
+  <h1><a href="https://sunnygond.blogspot.com/">Devil's Home</a></h1>
+
+  <article>
+    <h2><a href="https://www.example.com/article1">Article 1</a></h2>
+    <p>This is the first article on my news website.</p>
+    <img src="C:\Users\admin\Desktop\VIPS\NewMedia\photos\The_Hell">
+</article>
+
+  <article>
+    <h2><a href="https://www.example.com/article2">Article 2</a></h2>
+    <p>This is the second article on my news website.</p>
+    <img src="https://www.example.com/image2.jpg" alt="Image 2">
+  </article>
+
+
+
+
+</body>
+</html>
